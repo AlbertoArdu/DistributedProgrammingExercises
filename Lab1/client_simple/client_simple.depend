@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1427365387 source:/export/home/stud/s183217/Documents/client_simple/main.c
+	<stdio.h>
+	<stdlib.h>
+	<netinet/in.h>
+	<errno.h>
+	<ctype.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<arpa/inet.h>
+	<rpc/xdr.h>
+	<string.h>
+	<time.h>
+	"errlib.h"
+
+1421937505 /export/home/stud/s183217/Documents/client_simple/errlib.h
+	<stdarg.h>
+
+1421937505 /export/home/stud/s183217/Documents/client_simple/sockwrap.h
+	<sys/socket.h>
+	<arpa/inet.h>
+	<netdb.h>
+
+1421937505 source:/export/home/stud/s183217/Documents/client_simple/errlib.c
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<syslog.h>
+	<string.h>
+	<errno.h>
+
+1421937505 source:/export/home/stud/s183217/Documents/client_simple/sockwrap.c
+	<stdlib.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<sys/select.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<errno.h>
+	<unistd.h>
+	"errlib.h"
+	"sockwrap.h"
+

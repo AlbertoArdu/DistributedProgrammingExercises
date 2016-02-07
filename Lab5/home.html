@@ -1,0 +1,85 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="stile.css">
+<script type="text/javascript">
+	function loadingAlert(){
+		alert("Sto caricando la pagina...");
+		setTimeout("endLoad()",1000);
+	}
+	function endLoad(){
+		alert("Finito!!");
+	}
+	function isInt(val){
+		return !isNaN(val) && parseInt(Number(val)) == val && !isNaN(parseInt(val,10));
+	}
+	function chiediNumero(){
+		var i;
+		i=prompt("Scrivi un numero");
+		console.log(isInt(i));
+		if (isNaN(i) || !isInt(i)) {
+			document.write("Il numero inserito non è valido");
+		} else if (i%2==0) {
+			document.write("Il numero è pari.");
+		} else{
+			document.write("Il numero è dispari");
+		};
+	}
+	function operazioniSuDueNumeri () {
+		var a,b;
+		a=prompt("Dammi un numero");
+		b=prompt("Dammi un altro numero");
+		somma = parseInt(a)+parseInt(b);
+		differenza= parseInt(a)-parseInt(b);
+		alert("Differenza: "+ differenza);
+		alert("Somma: "+ somma);
+		
+	}
+	function creaLista (idUl,elements) {
+		var tag="<li>"
+		var fineTag="</li>"
+		var content="";
+
+		for (var i = 0; i < elements.length; i++) {
+			content += tag + elements[i] + fineTag;
+		};
+		document.getElementById(idUl).innerHTML = content;
+	}
+	function operazioniConElenco(){
+		var arg = [0,0,0,0];
+		arg[0]=prompt("Dammi un numero");
+		arg[1]=prompt("Dammi un altro numero");
+		arg[2]= parseInt(arg[0])+parseInt(arg[1]);
+		arg[3]= parseInt(arg[0])-parseInt(arg[1]);
+		creaLista("lista",arg);
+	}
+</script>
+	<title>Home - Dati Studente</title>
+</head>
+<body>
+<div class="header nav">
+<ul class="navbar">
+	<li class="selezionato"><a href="home.html">Home</a></li><!--
+	--><li><a href="curriculum.html">Curriculum</a></li><!--
+	--><li><a href="esami.html">Esami Superati</a></li>
+</ul>
+
+<!--<a class="link-button" href="home.html"><button class="navbar-button">HOME</button></a><a class="link-button" href="curriculum.html"><button class="navbar-button">CURRICULUM</button></a><a class="link-button" href="esami.html"><button class="navbar-button">ESAMI PASSATI</button></a>
+--></div>
+
+<div class="center">
+<div><span class="meta-dato">Nome: </span><span class="dato">Alberto</span></div>
+<div><span class="meta-dato">Cognome: </span><span class="dato">Ardusso</span></div>
+<div><span class="meta-dato">Data Nascita: </span><span class="dato">19/11/1992</span></div>
+<div><span class="meta-dato">Luogo di Nascita: </span><span class="dato"><a href="http://www.comune.saluzzo.cn.it">Saluzzo</a></span></div>
+<br><br><br>
+<button onclick="chiediNumero()" class="nav">Pari o dispari??</button>
+<button onclick="operazioniSuDueNumeri()" class="nav">Somma e differenza</button>
+<button onclick="operazioniConElenco()" class="nav">Elenco puntato</button>
+<ul id="lista">
+</ul>
+</div>
+<div class="footer"><span class="logo"><img alt="Stemma polito" id="logo-poli" src="http://security.polito.it/img/polito.gif"></span><span class="testo">Autore: <span class="firma">Alberto Ardusso</span><span class="email">ardusso.alberto@gmail.com</span></span></div>
+</body>
+</html>
