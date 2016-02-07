@@ -1,0 +1,177 @@
+html,body{
+	background-color: #81E35B;
+	color: white;
+	width: 100%;
+	height: 100%;
+	min-width: 656px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin:0px;
+	padding: 0px;
+}
+header{
+	background-color: #2C8708;
+	color: inherit;
+	width: 100%;
+	min-width: 700px;
+	height: 1.2cm;
+	z-index: 150;
+	border-bottom-style: solid;
+	border-bottom-color: #187200;
+}
+div.center{
+	background-color: inherit;
+	color: inherit;
+	width: 100%;
+	height: 100%;
+	min-height: 4cm;
+	padding-bottom: 100px;
+	z-index: 100;
+}
+div.menu{
+	background-color: inherit;
+	color: inherit;
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	height: 100%;
+	width: 230px;
+	position: relative;
+	border-right-style: solid;
+	border-right-color: #2C8708;
+	padding: 10px;
+}
+
+div.main{
+	background-image: url("../img/slide1.png");
+	background-repeat: repeat-x;
+	background-position: top left;
+	color: inherit;
+	height: 100%;
+	display: inline-block;
+	position: fixed;
+	left: 255px;
+	right: 0px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#logo_header{
+	width: 200px;
+	height: 35px;
+	padding-top: 5px;
+}
+.textbox{
+	width: 180px;
+	height: 23px;
+	border: 2px solid #456879;
+	border-radius: 10px;
+}
+.margin{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.error{
+	color: #ff6347;
+	font-weight: bold;
+}
+.message{
+	font-weight: bold;
+}
+
+span.label{
+	display: inline-block;
+	min-width: 100px;
+}
+
+label{
+	color: #0A3ECE;
+	font-weight: bold;
+}
+
+.button {
+	font-weight: bold;
+	color: white;
+	border-radius: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 3px;
+	border-color: #2A5EEE;
+	background: -webkit-linear-gradient(#2A5EEE, #0A3ECE); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2A5EEE, #0A3ECE); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2A5EEE, #0A3ECE); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2A5EEE, #0A3ECE); /* Standard syntax */
+}
+
+.rem_button{
+	width: 30px;
+	height: 30px;
+}
+
+.hidden{
+	visibility: hidden;
+	max-height: 0px;
+}
+
+.box_attivita{
+	border-radius: 10px;
+	display: inline-block;
+	position: relative;
+	width: 45%;
+	height: 4cm;
+	margin: 7px;
+	padding: 3px;
+	border-style: dotted;
+	border-color: #0000aa;
+	background-color: rgba(102,255,102,0.7);
+	box-shadow: 3px 3px 5px #227722;
+	color: #000fff;
+	font-family: monospace, "Courier New";
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.box_prenotabile:hover{
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 9px;
+	margin-bottom: 9px;
+	box-shadow: 5px 5px 5px #227722;
+	background-color: rgba(150,255,150,0.8);
+}
+
+.box_generico{
+	background-color: #2C8708;
+	overflow: hidden;
+	border-radius: 12px;
+	border-style: solid;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.box_centrato{
+	width: 450px;
+	height: auto;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -75px;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#pulsantieraLat{
+	position: relative;
+	top: 75px;
+}
+
+.box_elenco{
+	width: 100%;
+	height: 40px;
+}
